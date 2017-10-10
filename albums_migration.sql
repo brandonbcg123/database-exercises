@@ -9,9 +9,9 @@ CREATE TABLE albums (
 
   name  VARCHAR(150) NOT NULL,
 
-  release_date DATE NOT NULL,
+  release_date INT NOT NULL,
 
-  sales FLOAT(3,2) NOT NULL,
+  sales FLOAT(3,1) NOT NULL,
 
   genre VARCHAR(50) NOT NULL,
 
