@@ -5,7 +5,7 @@ FROM albums;
 
 SELECT '------------------------------------------------------';
 
-SELECT artist AS 'Artist:', name AS 'Album:', sales AS 'Sales:'
+SELECT id, artist AS 'Artist:', name AS 'Album:', sales AS 'Sales:'
 FROM albums;
 
 SELECT '------------------------------------------------------' AS '';
