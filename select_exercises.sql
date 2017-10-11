@@ -21,7 +21,7 @@ FROM albums
 WHERE release_date BETWEEN 1990 AND 1999;
 
 SELECT 'Which albums had less than 20 million certified sales' AS '';
-SELECT name AS 'Album Names:', sales AS 'Sales'
+SELECT name AS 'Album Names:', sales AS 'Sales:'
 FROM albums
 WHERE sales < 20.0;
 
