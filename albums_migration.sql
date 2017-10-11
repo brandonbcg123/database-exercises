@@ -11,7 +11,7 @@ CREATE TABLE albums (
 
   release_date INT NOT NULL,
 
-  sales FLOAT(3,1) NOT NULL,
+  sales FLOAT NOT NULL,
 
   genre VARCHAR(50) NOT NULL,
 
