@@ -32,3 +32,5 @@ SELECT *
 FROM employees
 WHERE last_name LIKE '%q%'
       AND last_name NOT LIKE '%qu%';
+
+-- don't have to use *, but wanted to show all the details of the employee
