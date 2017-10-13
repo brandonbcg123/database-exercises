@@ -6,7 +6,7 @@ FROM employees
   GROUP BY gender;
 # ORDER BY last_name ASC, first_name ASC;
 
-SELECT CONCAT(first_name, ' ', last_name)
+SELECT CONCAT(first_name, ' ', last_name) AS 'full_name'
 FROM employees
 WHERE last_name LIKE 'E%'
       AND last_name LIKE '%E'
@@ -18,7 +18,7 @@ WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31'
       AND birth_date LIKE '%-12-25'
 ORDER BY birth_date, hire_date, first_name, last_name, employment_time_in_days DESC;
 
-SELECT count(last_name) AS 'name_count', first_name, last_name
+SELECT count(*) AS 'name_count', first_name, last_name
 FROM employees
 WHERE last_name LIKE '%q%'
       AND last_name NOT LIKE '%qu%'
