@@ -36,3 +36,16 @@ WHERE emp_no IN (
   FROM dept_manager
   WHERE to_date >= curdate()
 ) AND gender = 'F';
+
+
+-- Bonus
+SELECT dept_name
+FROM departments
+  JOIN dept_manager AS dm
+  ON departments.dept_no = dm.dept_no
+WHERE dm.emp_no IN (
+  SELECT emp_no
+  FROM employees
+  WHERE gender = 'F'
+) AND dm.to_date >= curdate()
+ORDER BY dept_name;
